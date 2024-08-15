@@ -1,0 +1,120 @@
+.container {
+  width: 90%; /* Use a percentage to make the container responsive */
+  max-width: 500px; /* Limit the container's maximum width */
+  margin: auto; /* Center the container horizontally */
+  margin-top: 100px; /* Add top margin for spacing */
+  background-image: linear-gradient(#c9def4, #f5ccd4, #b8a4c9); /* Gradient background */
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.10); /* Add subtle shadow */
+  color: #262626; /* Set text color */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange items vertically */
+  gap: 15px; /* Space between flex items */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px 30px; /* Inner padding */
+}
+
+.container hr {
+  height: 2px; /* Set line height */
+  border: none; /* Remove default border */
+  background: #707070; /* Line color */
+}
+
+.container h2 {
+  font-size: 22px; /* Heading font size */
+  font-weight: 500; /* Medium font weight */
+}
+
+.container ul li {
+  display: flex; /* Flex layout for list items */
+  align-items: center; /* Center items vertically */
+  height: 50px; /* Set item height */
+  padding-left: 10px; /* Left padding */
+  border: 1px solid #686868; /* Border color */
+  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 10px; /* Space below items */
+  font-size: 18px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.btn {
+  margin: auto; /* Center button horizontally */
+  position: relative; /* Position for transitions */
+  font-size: 17px; /* Font size */
+  text-transform: uppercase; /* Uppercase text */
+  text-decoration: none; /* Remove underline */
+  padding: 1em 2.5em; /* Padding around button text */
+  display: inline-block; /* Inline block layout */
+  border-radius: 10px; /* Rounded corners */
+  transition: all 0.2s; /* Smooth transition */
+  border: none; /* Remove border */
+  font-family: inherit; /* Inherit font family */
+  font-weight: 500; /* Medium font weight */
+  color: black; /* Text color */
+  background-color: #6d48e4e4; /* Background color */
+}
+
+.btn:hover {
+  transform: translateY(-3px); /* Lift button on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6); /* Scale effect on hover */
+  opacity: 0; /* Fade effect */
+}
+
+.container .index {
+  margin: auto; /* Center text */
+  font-size: 16px; /* Font size */
+}
+
+.container .correct {
+  background-color: #4ee576; /* Correct answer background */
+  border-color: #00d397; /* Correct answer border */
+}
+
+.container .incorrect {
+  background-color: #e18585; /* Incorrect answer background */
+  border-color: #ff4a4a; /* Incorrect answer border */
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px 20px; /* Reduce padding on tablets */
+  }
+
+  .container h2 {
+    font-size: 20px; /* Adjust heading size on tablets */
+  }
+
+  .container ul li {
+    font-size: 16px; /* Adjust font size on tablets */
+    height: 45px; /* Adjust item height */
+  }
+
+  .btn {
+    padding: 0.8em 2em; /* Reduce button padding on tablets */
+    font-size: 16px; /* Adjust font size on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin-top: 50px; /* Reduce top margin on mobiles */
+    padding: 10px 15px; /* Further reduce padding */
+  }
+
+  .container h2 {
+    font-size: 18px; /* Further adjust heading size on mobiles */
+  }
+
+  .container ul li {
+    font-size: 14px; /* Further adjust font size on mobiles */
+    height: 40px; /* Further adjust item height */
+  }
+
+  .btn {
+    padding: 0.6em 1.5em; /* Further reduce button padding on mobiles */
+    font-size: 15px; /* Further adjust font size on mobiles */
+  }
+}
